@@ -42,6 +42,39 @@ for temp_c in reversed(range(-20, 45, 1)):
 tC = 16
 print("%i stopni Celsiusza to %.1f stopni Farenhaita" % (tC, c_to_f[tC]))
 
+# CONTINUE & BREAK
+i = 0
+for liczba in range(1,10,1):
+    print("Obieg:" + str(i + 1))
+    if(liczba == 5):
+        print("XXX")
+        break
+    i += 1
+
+
+#
+# while(True):
+#     if(input("Co chcesz zrobić??? Q-wyjście").upper() == "Q"):
+#         print("Przerwanie")
+#         break
+
+
+lista = range(-10,10,1)
+los = sample(set(lista),5)
+licznik = 5.5
+for i in los:
+    print("Wylosowana wartość: %i" % i)
+    if(i == 0):
+        print("Nie można dzielić przez zero")
+        continue
+    print("Wynik operacji: %.2f" % (licznik/i))
+
+
+
+
+
+
+
 
 
 
