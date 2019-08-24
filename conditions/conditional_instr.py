@@ -35,6 +35,7 @@ users = [ ["mk","mk123","ROLE_ADMIN",True],
 isLogged = False
 badCredentialsCounter = 0
 while(isLogged == False):
+    print(users)
     login = input("podaj login:")
     for user in users:
         # spr. czy jest taki użytkownik
@@ -52,8 +53,13 @@ while(isLogged == False):
                     break
             else:
                 print("BŁĘDNE HASŁO")
+                badCredentialsCounter += 1
+                if (badCredentialsCounter == 3):
+                    user[3] = False
         elif(login == user[0] and user[3] == False):
             print("KONTO ZABLOKOWANE!")
+            isLogged = True
+            break
 
 
 
