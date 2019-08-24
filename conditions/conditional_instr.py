@@ -55,13 +55,12 @@ while(isLogged == False):
                 user[4] += 1
                 if (user[4] == 3):
                     user[3] = False
+                break
         elif(login == user[0] and user[3] == False):
             print("KONTO ZABLOKOWANE!")
             break
-        else:
-            print("BŁĘDNY LOGIN")
-            break
-
+    if(isLogged == False):
+        print("Błędny login")
 
 
 
