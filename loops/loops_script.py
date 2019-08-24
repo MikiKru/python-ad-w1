@@ -29,6 +29,25 @@ while len(osoby) > 0:
     i += 1
 print(group_dict)
 
+#P55
+c_to_f = {}
+
+for temp_c in reversed(range(-20, 45, 1)):
+    c_to_f[temp_c] = (9/5) * temp_c + 32
+    if(temp_c != 0):
+        print("%+4iC | %5.1fF" % (temp_c, c_to_f[temp_c]))
+    else:
+        print("%4iC | %5.1fF" % (temp_c, c_to_f[temp_c]))
+
+
+
+
+
+
+
+
+
+
 
 
 
