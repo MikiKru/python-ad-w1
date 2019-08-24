@@ -62,20 +62,38 @@ for liczba in range(1,10,1):
 lista = range(-10,10,1)
 los = sample(set(lista),5)
 licznik = 5.5
+# for i in los:
+#     print("Wylosowana wartość: %i" % i)
+#     if(i == 0):
+#         print("Nie można dzielić przez zero")
+#         continue
+#     print("Wynik operacji: %.2f" % (licznik/i))
+
 for i in los:
     print("Wylosowana wartość: %i" % i)
-    if(i == 0):
-        print("Nie można dzielić przez zero")
-        continue
-    print("Wynik operacji: %.2f" % (licznik/i))
+    try:
+        print("Wynik operacji: %.2f" % (licznik/i))
+    except:
+        print("Błąd dzielenia przez 0")
 
 
 
+#P50
+# produkty do kupienia
+products = {
+        1 : ["A", 49.99, 5],
+        2 : ["B", 13.99, 4],
+        3 : ["C", 16.99, 9]
+            }
+# kaoszyk zakupowy
+order = {2: ["B",13.99, 1]}
 
-
-
-
-
+"""
+1. Menu zamówień (while ... )
+2. Zamówienie produktu po ID w określonej ilości
+3. Gdy zamówienie może być dodane do koszyka to zmiejszamy stan magazynowy
+4. Eksport paragonu wraz z kwotą do zapłaty
+"""
 
 
 
