@@ -8,6 +8,11 @@
 login = input("podaj login:")
 password = input("podaj password:")
 
+users = [ ["mk","mk123","ROLE_ADMIN",True],
+          ["kk", "kk123", "ROLE_USER", True],
+          ["ll", "ll123", "ROLE_USER", True]]
+
+
 if(login == "admin" and password == "admin"):
     print("PANEL ADMINISTRATORA")
 elif (login == "user" and password == "user"):
