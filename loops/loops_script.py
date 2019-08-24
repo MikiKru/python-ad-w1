@@ -39,6 +39,8 @@ for temp_c in reversed(range(-20, 45, 1)):
     else:
         print("%4iC | %5.1fF" % (temp_c, c_to_f[temp_c]))
 
+tC = 16
+print("%i stopni Celsiusza to %.1f stopni Farenhaita" % (tC, c_to_f[tC]))
 
 
 
