@@ -8,14 +8,17 @@
 login = input("podaj login:")
 password = input("podaj password:")
 
+# login, hasło, uprawnienia, aktywacja
 users = [ ["mk","mk123","ROLE_ADMIN",True],
           ["kk", "kk123", "ROLE_USER", True],
           ["ll", "ll123", "ROLE_USER", True]]
 
-
-if(login == "admin" and password == "admin"):
-    print("PANEL ADMINISTRATORA")
-elif (login == "user" and password == "user"):
-    print("PANEL UŻYTKOWNIKA")
-else:
-    print("BŁĄD LOGOWANIA")
+# LOGOWANIE NA PODSTAWIE LISTY UŻTRKOWNIKÓW
+for user in users:
+    if(login == user[0] and password == user[1]):
+        if(user[2] == "ROLE_ADMIN"):
+            print("PANEL ADMINISTRATORA")
+            break
+        else:
+            print("PANEL UŻYTKOWNIKA")
+            break
