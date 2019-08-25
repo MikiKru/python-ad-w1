@@ -1,4 +1,5 @@
 # WHILE ELSE
+import time
 from random import randint, sample, choice
 
 services = ["GitHub", "Google", "Facebook"]
@@ -108,7 +109,7 @@ while(isClosed == False):
             sum = 0
             for key in order.keys():                        # pętla obliczająca sumę do zapłaty na podstawie
                 sum += order[key][1] * order[key][2]        # słownika order
-            print("Do zapłaty: " + str(sum) + "zł")
+            print("Do zapłaty: %5.2f zł" % (sum))
             isClosed = True
         elif(decision in products.keys()):                  # wybór produktu
             amount = int(input("Podaj ilość"))              # wybór użytkownika -> ilość zamawiana produktu
@@ -120,7 +121,8 @@ while(isClosed == False):
                 orderNo += 1
                 print("Twój koszyk")
                 for key in order.keys():                    # pętla wypisująca zawartość koszyka
-                    print("%3i | %20s | %5.2f | %3i" % (key, order[key][0], order[key][1], order[key][2]))
+                    print("%3i | %20s | %5.2f | %3i | %15s" % (
+                        key, order[key][0], order[key][1], order[key][2], time.strftime("%d.%m.%Y %H:%M",time.localtime())))
                 products[decision][2] = products[decision][2] - amount
         else:                                               # błąd użytkownika
             print("Błędny wybór")
