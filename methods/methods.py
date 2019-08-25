@@ -1,4 +1,5 @@
-from time import localtime
+import datetime
+from time import localtime, time, ctime
 
 returnedValue = localtime()
 print(returnedValue)
@@ -78,14 +79,25 @@ print(factorial(4))
 print(factorial(0))
 print(factorial(-19))
 
+# REKURENCYJNIE
+def factorialRec(n):
+    if(n == 1):
+        return 1
+    return n * factorialRec(n - 1)
 
+def date_diff_in_microseconds(dt2, dt1):
+    timedelta = dt2 - dt1
+    return timedelta.microseconds
 
+t_start = datetime.datetime.now()
+print(factorial(1000))
+t_stop = datetime.datetime.now()
+print("Factorial: " + str(date_diff_in_microseconds(t_stop, t_start)))
 
-
-
-
-
-
+t_start = datetime.datetime.now()
+print(factorialRec(800))
+t_stop = datetime.datetime.now()
+print("Factorial Rec: " + str(date_diff_in_microseconds(t_stop, t_start)))
 
 
 
