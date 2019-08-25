@@ -176,9 +176,22 @@ def generateHtmlSpanCode(posts, color = "black", fontSize = 12):
         html_content += '<h1 style="color: %s; font-size: %s;">%s</h1>\n' % (color, fontSize, post)
     return html_content
 
-print(generateHtmlSpanCode(posts, "red", 16))
+# print(generateHtmlSpanCode(posts, "red", 16))
+print(generateHtmlSpanCode(posts))
 
+def generateHtmlSpanCodeWithBackground(posts, color = "black", fontSize = 12):
+    html_content = ""
+    backgrounColor = "black"
+    for post in posts:
+        html_content += '<h1 style="color: %s; font-size: %s; background-color: %s">%s</h1>\n' % \
+                        (color, fontSize, backgrounColor, post)
+        if(backgrounColor == "black"):
+            backgrounColor = "white"
+        else:
+            backgrounColor = "black"
+    return html_content
 
+print(generateHtmlSpanCodeWithBackground(posts, color = "red"))
 
 
 
