@@ -1,4 +1,5 @@
 import datetime
+from random import choices
 from time import localtime, time, ctime
 
 returnedValue = localtime()
@@ -120,9 +121,41 @@ print(fibonacciSeries(15))
 names = ["Ala","Ola","Ela"]
 for i, name in enumerate(names):
     print(i, name)
-# == # 
+# == #
 i = 0
 for name in names:
     print(i, name)
     i += 1
+
+content = "Ciąg został omówiony w roku 1202 przez Leonarda z Pizy, zwanego Fibonaccim, " \
+          "w dziele Liber abaci jako rozwiązanie zadania o rozmnażaniu się królików. " \
+          "Nazwę ciąg Fibonacciego spopularyzował w XIX w. Edouard Lucas"
+
+"""
+1. Podziel zdanie na wyrazy 
+2. Losuj wyrazy i przypisuj je do nowo wygenerowanego zdania 
+"""
+def splitSentenceBySeparator(content, separator):
+    return content.split(separator)
+def createSentenceByListOfWords(listOfWords):
+    sentence = ""
+    for word in listOfWords:
+        sentence += word + " "
+    return sentence + "."
+def generateSentence(content, n = 5):
+    words = splitSentenceBySeparator(content, " ")
+    generatedSentence = choices(words, k = n)
+    return createSentenceByListOfWords(generatedSentence)
+
+print(generateSentence(content))
+
+
+
+
+
+
+
+
+
+
 
