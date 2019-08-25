@@ -86,7 +86,7 @@ products = {
         3 : ["C", 16.99, 9]
             }
 # kaoszyk zakupowy
-order = {2: ["B",13.99, 1]}
+order = {}
 
 """
 1. Menu zamówień (while ... )
@@ -94,10 +94,28 @@ order = {2: ["B",13.99, 1]}
 3. Gdy zamówienie może być dodane do koszyka to zmiejszamy stan magazynowy
 4. Eksport paragonu wraz z kwotą do zapłaty
 """
-
-
-
-
+isClosed = False
+while(isClosed == False):
+    print("Wybierz produkt podając jego ID")
+    print("%3s | %20s | %5s | %3s" % ("ID","NAZWA","CENA","ILOŚC"))
+    for key in products.keys():
+        print("%3i | %20s | %5.2f | %3i" % (key,products[key][0],products[key][1],products[key][2]))
+    decision = int(input("Wybierz produkt 0-wyjście"))
+    if(decision == 0):
+        isClosed = True
+    elif(decision in products.keys()):
+        amount = int(input("Podaj ilość"))
+        if(products[decision][2] < amount):
+            print("Brak takiej ilości w magazynie")
+        else:
+            print("Dodano do koszyka")
+            order[decision] = [products[decision][0],products[decision][1],amount]
+            print("Twój koszyk")
+            for key in order.keys():
+                print("%3i | %20s | %5.2f | %3i" % (key, order[key][0], order[key][1], order[key][2]))
+            products[decision][2] = products[decision][2] - amount
+    else:
+        print("Błędny wybór")
 
 
 
