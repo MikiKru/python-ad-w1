@@ -99,7 +99,30 @@ print(factorialRec(800))
 t_stop = datetime.datetime.now()
 print("Factorial Rec: " + str(date_diff_in_microseconds(t_stop, t_start)))
 
+# P58
+# 1,1,2,3,5,8,....
+def fibonacciSeries(n):
+    fib = []
+    sum = 0
+    for index, value in enumerate(range(0,n+1)):
+        if(index == 0):
+            fib.append(0)
+        elif(index == 1):
+            fib.append(1)
+        else:
+            fib.append(fib[index - 1] + fib[index - 2])
+        sum += fib[index]
 
+    return fib, fib[n], sum
 
+print(fibonacciSeries(15))
 
+names = ["Ala","Ola","Ela"]
+for i, name in enumerate(names):
+    print(i, name)
+# == # 
+i = 0
+for name in names:
+    print(i, name)
+    i += 1
 
