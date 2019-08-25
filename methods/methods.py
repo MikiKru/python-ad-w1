@@ -193,8 +193,19 @@ def generateHtmlSpanCodeWithBackground(posts, color = "black", fontSize = 12):
 
 print(generateHtmlSpanCodeWithBackground(posts, color = "red"))
 
+# color = "black"
+def generateDifferentColors(color1 = "black", color2 = "white"):
+    global color
+    if(color == color1):
+        color = color2
+    else:
+        color = color1
+    return color
 
-
+color = "black"
+print(generateDifferentColors("red","yellow"))
+print(generateDifferentColors("red","yellow"))
+print(generateDifferentColors())
 
 
 
