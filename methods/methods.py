@@ -226,7 +226,7 @@ def sumRandomValuesWithSuport(minSupp, maxSupp, n):
             sumProcessed += v
     return signal, sum, sum/len(signal), processedSignal,sumProcessed, sumProcessed/len(processedSignal)
 
-x = sumRandomValuesWithSuport(-900,900,100000)
+x = sumRandomValuesWithSuport(-900,900,10)
 print(x[0],x[1],x[2])
 print(x[3],x[4],x[5])
 print(x[2],x[5])
