@@ -156,6 +156,20 @@ def distanceMeasure(x_start, y_start, x_stop, y_stop):
 
 print(distanceMeasure(1,1,2,2))
 
+# P61
+def geometricSeries(a1, q, n):
+    sum = 0
+    for i in range(1,n+1):
+        sum += a1*pow(q,i-1)
+    return sum, a1*pow(q,n-1)
+
+print("Geometric series")
+print(geometricSeries(2,3,5)[0], geometricSeries(2,3,5)[1])
+
+
+
+
+
 
 
 
