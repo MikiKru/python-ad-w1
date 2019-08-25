@@ -1,6 +1,6 @@
 import datetime
 from math import sqrt
-from random import choices
+from random import choices, randint
 from time import localtime, time, ctime
 
 returnedValue = localtime()
@@ -206,6 +206,33 @@ color = "black"
 print(generateDifferentColors("red","yellow"))
 print(generateDifferentColors("red","yellow"))
 print(generateDifferentColors())
+
+def generateSignal(n):
+    signal = []
+    for i in range(0, n):
+        signal.append(randint(-1000, 1000))
+    return signal
+def sumRandomValuesWithSuport(minSupp, maxSupp, n):
+    signal = generateSignal(n)
+    processedSignal = []
+    sum = 0
+    sumProcessed = 0
+    for i,v in enumerate(signal):
+        sum += v
+        if(v < minSupp or v > maxSupp):
+            processedSignal.append(0)
+        else:
+            processedSignal.append(v)
+            sumProcessed += v
+    return signal, sum, sum/len(signal), processedSignal,sumProcessed, sumProcessed/len(processedSignal)
+
+x = sumRandomValuesWithSuport(-900,900,100000)
+print(x[0],x[1],x[2])
+print(x[3],x[4],x[5])
+print(x[2],x[5])
+
+
+
 
 
 
