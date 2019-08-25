@@ -167,6 +167,19 @@ print("Geometric series")
 print(geometricSeries(2,3,5)[0], geometricSeries(2,3,5)[1])
 
 
+# ZADANIE DLA WAS: DODAJ ARGUMENT OKREŚLAJACY ILE DUPLIKAGÓW ZNACZNIKA MA BY WYGENEROWANYCH
+posts = ["Post1","Post2","Post3","Post4"]
+
+def generateHtmlSpanCode(posts, color = "black", fontSize = 12):
+    html_content = ""
+    for post in posts:
+        html_content += '<h1 style="color: %s; font-size: %s;">%s</h1>\n' % (color, fontSize, post)
+    return html_content
+
+print(generateHtmlSpanCode(posts, "red", 16))
+
+
+
 
 
 
