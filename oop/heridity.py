@@ -29,9 +29,11 @@ class Admin(Moderator):
         self.permissionDelete = True
         self.permissionUpdate = True
     def updatePost(self):
-        print("UPDATING...")
+        if(self.permissionUpdate):
+            print("UPDATING...")
     def deletePost(self):
-        print("DELETING...")
+        if(self.permissionDelete):
+            print("DELETING...")
     def __str__(self):
         return super().__str__() + \
                (" DELETE" if self.permissionDelete else "")+(" UPDATE" if self.permissionUpdate else "")
@@ -53,4 +55,6 @@ admin.readPost()
 admin.writePost()
 admin.updatePost()
 admin.deletePost()
-
+admin.permissionDelete = False
+print(admin)
+admin.deletePost()
