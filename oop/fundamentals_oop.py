@@ -13,7 +13,7 @@ class Point3D:
     def __add__(self, other):
         return Point3D(self.x + other.x, self.y + other.y, self.z + other.z)
     def __gt__(self, other):
-        if(sqrt((self.x**2 + self.y**2 + self.z**2) - (other.x**2 + other.y**2 + other.z**2)) > 0):
+        if(sqrt(self.x**2 + self.y**2 + self.z**2) - sqrt(other.x**2 + other.y**2 + other.z**2) > 0):
             return True
         return False
     def __eq__(self, other):
@@ -100,3 +100,7 @@ p2 = Point3D(2,3,4)
 # + wywołuje metode specjalną __add__()
 print(p1 + p2)
 # który punkt jest większy - czyli jeży dalej wzglęcem 0,0
+print(p1 == p2)
+print(p1 == p1)
+print("p1 > p2",p1 > p2)
+print("p1 > p1",p1 > p1)
