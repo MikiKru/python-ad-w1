@@ -20,6 +20,12 @@ class Point3DController:
         return newPoint
     def multiplyByValue(self, point, value):
         return Point3D(point.x * value, point.y * value, point.z * value)
+    # metoda sumująca wszystkie składowe punktów znajdujące się w liście
+    # metoda przyjmuje listę punktów jako argument
+    # metoda zwraca obiekt klasy Poin3D
+    def sumAllPoints(self, points):
+        # ???
+        return None
 
 # utworzenie obiektu klasy
 point1 = Point3D(0,0,0)
@@ -47,3 +53,5 @@ resultPoint = pc.multiplyByValue(Point3D(9,9,9),0.5)
 print(resultPoint)
 print(resultPoint.x, resultPoint.y, resultPoint.z)
 
+points = [Point3D(1,1,1), Point3D(2,2,2), Point3D(3,2,1),Point3D(0,5,11)]
+print(pc.sumAllPoints(points))
