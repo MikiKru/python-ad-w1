@@ -12,8 +12,14 @@ class Point3D:
 
 # obsługa żądań - kontroler
 class Point3DController:
-    p
-
+    # metoda do dodawania składowych dwóch pkt
+    # zwracająca nowy punkt z sumą składowych
+    def sumTwoPoints(self, p1, p2):
+        # utworzenie obiektu klasy Point3D
+        newPoint = Point3D(p1.x + p2.x, p1.y + p2.y, p1.z + p2.z)
+        return newPoint
+    def multiplyByValue(self):
+        pass
 
 # utworzenie obiektu klasy
 point1 = Point3D(0,0,0)
@@ -29,3 +35,9 @@ print("Point2",point2.x, point2.y, point2.z)
 # metoda do reprezentacji tekstowej obiektu - toString()
 print(point1)
 print(point2)
+# metoda sumująca składowe obiektów klasy Point3D
+pc = Point3DController()
+pointSum1 = pc.sumTwoPoints(point1,point2)
+print(pointSum1)
+# pointSum2 = pc.sumTwoPoints(point2,point2)
+# print(pointSum2)
