@@ -31,7 +31,15 @@ class Point3DController:
             sumPoint.y += point.y
             sumPoint.z += point.z
         return sumPoint
-
+    # metoda wyszukująca punkt w liście po jego składowych
+    # metoda zwraca wartość typu boolean
+    def findPoint(self, points, x, y, z):
+        findPoint = Point3D(x,y,z)
+        for point in points:
+            if(point.x == findPoint.x and point.y == findPoint.y and point.z == findPoint.z):
+                return True
+        return False
+    
 # utworzenie obiektu klasy
 point1 = Point3D(0,0,0)
 point2 = Point3D(5,5,5)
