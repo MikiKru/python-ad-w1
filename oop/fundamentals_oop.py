@@ -39,7 +39,7 @@ class Point3DController:
             if(point.x == findPoint.x and point.y == findPoint.y and point.z == findPoint.z):
                 return True
         return False
-    
+
 # utworzenie obiektu klasy
 point1 = Point3D(0,0,0)
 point2 = Point3D(5,5,5)
@@ -68,3 +68,5 @@ print(resultPoint.x, resultPoint.y, resultPoint.z)
 
 points = [Point3D(1,1,1), Point3D(2,2,2), Point3D(3,2,1),Point3D(0,5,11)]
 print(pc.sumAllPoints(points))
+
+print(pc.findPoint(points, 1,1,2))
