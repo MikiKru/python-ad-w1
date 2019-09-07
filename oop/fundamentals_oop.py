@@ -24,8 +24,13 @@ class Point3DController:
     # metoda przyjmuje listę punktów jako argument
     # metoda zwraca obiekt klasy Poin3D
     def sumAllPoints(self, points):
-        # ???
-        return None
+        sumPoint = Point3D(0,0,0)
+        # element listy to obiekt klasy Point3D
+        for point in points:
+            sumPoint.x += point.x
+            sumPoint.y += point.y
+            sumPoint.z += point.z
+        return sumPoint
 
 # utworzenie obiektu klasy
 point1 = Point3D(0,0,0)
