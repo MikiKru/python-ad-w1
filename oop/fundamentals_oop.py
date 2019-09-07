@@ -1,7 +1,7 @@
 # struktura - model danych
 class Point3D:
     # konstruktor
-    def __init__(self, x, y, z):
+    def __init__(self, x = 0, y = 0, z = 0):
         # self.x - pole klasowe - dostępne dla wszystkich składowych klasy
         self.x = x
         self.y = y
@@ -14,6 +14,9 @@ class Point3D:
 class Point3DController:
     # metoda do dodawania składowych dwóch pkt
     # zwracająca nowy punkt z sumą składowych
+    def __add__(self, other):
+        return Point3D(self.x + other.x, self.y + other.y, self.z + other.z)
+
     def sumTwoPoints(self, p1, p2):
         # utworzenie obiektu klasy Point3D
         newPoint = Point3D(p1.x + p2.x, p1.y + p2.y, p1.z + p2.z)
@@ -70,3 +73,13 @@ points = [Point3D(1,1,1), Point3D(2,2,2), Point3D(3,2,1),Point3D(0,5,11)]
 print(pc.sumAllPoints(points))
 
 print(pc.findPoint(points, 1,1,2))
+
+print("Nazwa klasy: ", point1.__class__.__name__)
+print("Nazwa klasy: ", pc.__class__.__name__)
+print("Nazwa klasy: ", resultPoint.__class__.__name__)
+print("Nazwa klasy: ", points.__class__)
+print("Nazwa klasy: ", pc.findPoint(points, 1,1,2).__class__)
+print("Typ obiektu: ", type(points))
+
+print(Point3D(1,2,3))
+print("Punkt bez argumentów:", Point3D())
