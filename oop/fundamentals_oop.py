@@ -1,4 +1,7 @@
 # struktura - model danych
+from math import sqrt
+
+
 class Point3D:
     # konstruktor
     def __init__(self, x = 0, y = 0, z = 0):
@@ -7,6 +10,16 @@ class Point3D:
         self.y = y
         self.z = z
     # tekstowa reprezentacja obiektu
+    def __add__(self, other):
+        return Point3D(self.x + other.x, self.y + other.y, self.z + other.z)
+    def __gt__(self, other):
+        if(sqrt((self.x**2 + self.y**2 + self.z**2) - (other.x**2 + other.y**2 + other.z**2)) > 0):
+            return True
+        return False
+    def __eq__(self, other):
+        if(self.x == other.x and self.y == other.y and self.z == other.z):
+            return True
+        return False
     def __str__(self):
         return "[x=%d,y=%d,z=%d]" % (self.x,self.y,self.z)
 
@@ -14,9 +27,6 @@ class Point3D:
 class Point3DController:
     # metoda do dodawania składowych dwóch pkt
     # zwracająca nowy punkt z sumą składowych
-    def __add__(self, other):
-        return Point3D(self.x + other.x, self.y + other.y, self.z + other.z)
-
     def sumTwoPoints(self, p1, p2):
         # utworzenie obiektu klasy Point3D
         newPoint = Point3D(p1.x + p2.x, p1.y + p2.y, p1.z + p2.z)
@@ -83,3 +93,10 @@ print("Typ obiektu: ", type(points))
 
 print(Point3D(1,2,3))
 print("Punkt bez argumentów:", Point3D())
+
+# Special methods
+p1 = Point3D(1,1,1)
+p2 = Point3D(2,3,4)
+# + wywołuje metode specjalną __add__()
+print(p1 + p2)
+# który punkt jest większy - czyli jeży dalej wzglęcem 0,0
