@@ -18,8 +18,8 @@ class Point3DController:
         # utworzenie obiektu klasy Point3D
         newPoint = Point3D(p1.x + p2.x, p1.y + p2.y, p1.z + p2.z)
         return newPoint
-    def multiplyByValue(self):
-        pass
+    def multiplyByValue(self, point, value):
+        return Point3D(point.x * value, point.y * value, point.z * value)
 
 # utworzenie obiektu klasy
 point1 = Point3D(0,0,0)
@@ -41,3 +41,9 @@ pointSum1 = pc.sumTwoPoints(point1,point2)
 print(pointSum1)
 # pointSum2 = pc.sumTwoPoints(point2,point2)
 # print(pointSum2)
+# skalowania składowych punktu
+print(pc.multiplyByValue(point1,2))
+resultPoint = pc.multiplyByValue(Point3D(9,9,9),0.5)
+print(resultPoint)
+print(resultPoint.x, resultPoint.y, resultPoint.z)
+
