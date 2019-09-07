@@ -20,8 +20,8 @@ class Point3D:
         if(self.x == other.x and self.y == other.y and self.z == other.z):
             return True
         return False
-    def __str__(self):
-        return "[x=%d,y=%d,z=%d]" % (self.x,self.y,self.z)
+    # def __str__(self):
+    #     return "[x=%d,y=%d,z=%d]" % (self.x,self.y,self.z)
 
 # obsługa żądań - kontroler
 class Point3DController:
@@ -104,3 +104,37 @@ print(p1 == p2)
 print(p1 == p1)
 print("p1 > p2",p1 > p2)
 print("p1 > p1",p1 > p1)
+
+# Cykl życia obiektu
+p1 = Point3D(1,1,1)
+p2 = p1
+p3 = Point3D(1,1,1)
+print(p1)
+print(p2)
+print(p3)
+print("XXXXX")
+p1.y = 2
+print(p1)
+print(p2)
+print(p3)
+print("XXXXX")
+p1 = Point3D(1,1,1)
+print(p1)
+print(p2)
+print(p3)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
