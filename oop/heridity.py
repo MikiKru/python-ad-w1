@@ -3,6 +3,12 @@ class User:
         self.login = login
         self.password = password
         self.permissionSelect = True
+    def readPost(self):
+        if(self.permissionSelect):
+            print("READING...")
+    def __str__(self):
+        return "login: %s password: %s PERMISSIONS: %s" \
+               %(self.login,self.password, ("SELECT" if (self.permissionSelect == True) else ""))
 
 # moderator dziedziczy po obiekcie user
 class Moderator(User):
@@ -11,8 +17,8 @@ class Moderator(User):
         self.password = password
         self.permissionInsert = True
 
-
-
+user = User("user", "user")
+print(user)
 
 
 
