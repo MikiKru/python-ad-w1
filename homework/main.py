@@ -20,20 +20,23 @@ while(True):
         except:
             print("Numer indeksu musi być liczbą!")
     elif(menu.upper()=="Z"):
-        grades = input("Podaj listę ocen (po przecinku)")
-        grades = grades.split(",")
-        # konwersja ocen do liczb całkowitych
         try:
-            i = 0
-            while(i < len(grades)):
-                # aktualizacja listy poprzez konwersję str to int
+            index_no = int(input("podaj numer indeksu"))
+            grades = input("Podaj listę ocen (po przecinku)")
+            grades = grades.split(",")
+            # konwersja ocen do liczb całkowitych
+            for i, grade in enumerate(grades):
                 grades[i] = int(grades[i])
-                i += 1
-            print(grades)
+            # wywołanie metody dodającej oceny do wybranego studenta
+            dziekanat.addGradesToStudent(index_no,grades)
         except:
-           print("Błąd danych! Nie można wykonać konwersji")
+           print("Błąd danych! Nie można wykonać konwersji lub błędny numer indeksu")
     elif(menu.upper()=="O"):
-        pass
+        try:
+            index_no = int(input("podaj numer indeksu"))
+            dziekanat.deleteStudentGrades(index_no)
+        except:
+            print("Błędny numer indeksu")
     elif(menu.upper()=="W"):
         print(dziekanat)
     elif(menu.upper()=="Q"):
