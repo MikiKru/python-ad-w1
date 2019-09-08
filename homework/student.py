@@ -9,6 +9,10 @@ class Student:
         global last_insert_index
         last_insert_index += 1
         self.index_no = last_insert_index
+        # pusta lista ocen
+        self.grades = []
 
     def __str__(self):
-        return "| %15s | %15s | %06d |" % (self.name,self.lastname,self.index_no)
+        return "| %06d | %15s | %15s | %25s |" % \
+               (self.index_no,self.name,self.lastname,self.grades)
+print(Student("Test","Test"))
