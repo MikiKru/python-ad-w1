@@ -7,8 +7,18 @@ class StudentController:
         self.students = []
     def __str__(self):
         output = ""
+        sum = 0
+        studentHasGrade = 0
         for student in self.students:
             output += (student.__str__() + "\n")
+            if(len(student.grades) != 0):
+                sum += student.calculateAvg()
+                studentHasGrade += 1
+        # średnia wszystkich studentów
+        if(studentHasGrade == 0):
+            output += "ŚREDNIA STUDENTÓW Z LISTĄ OCEN: %5.2f" % (0)
+        else:
+            output += "ŚREDNIA STUDENTÓW Z LISTĄ OCEN: %5.2f" % (sum/studentHasGrade)
         return output
     # metoda dodająca studenta do listy
     def addStudent(self, name, lastname):

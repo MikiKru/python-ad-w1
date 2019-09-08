@@ -18,5 +18,6 @@ class Student:
             return 0
         return sum/len(self.grades)
     def __str__(self):
-        return "| %06d | %15s | %15s | %25s | %5.2f |" % \
-               (self.index_no,self.name,self.lastname,self.grades, self.calculateAvg())
+        return "| %06d | %15s | %15s | %25s | %5s |" % \
+               (self.index_no,self.name,self.lastname,self.grades,
+                "B/D" if self.calculateAvg() == 0. else self.calculateAvg())
