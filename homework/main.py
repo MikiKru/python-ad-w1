@@ -8,9 +8,10 @@ while(True):
     menu = input("APLIKACJA DZIEKANAT\n"
                  "(D)-dodaj nowego studenta\n(U)-usuń studenta\n(Z)-zaktualizuj oceny\n"
                  "(O)-wyczyść listę ocen studenta\n(W)-wypisz listę studentów\n(Q)-wyjdź z programu")
-
     if(menu.upper()=="D"):
-        pass
+        name = input("podaj imię")
+        lastname = input("podaj nazwisko")
+        dziekanat.addStudent(name,lastname)
     elif(menu.upper()=="U"):
         pass
     elif(menu.upper()=="Z"):
@@ -18,7 +19,7 @@ while(True):
     elif(menu.upper()=="O"):
         pass
     elif(menu.upper()=="W"):
-        pass
+        print(dziekanat)
     elif(menu.upper()=="Q"):
         # przerwanie pętli while
         break
