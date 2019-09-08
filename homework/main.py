@@ -20,7 +20,18 @@ while(True):
         except:
             print("Numer indeksu musi być liczbą!")
     elif(menu.upper()=="Z"):
-        pass
+        grades = input("Podaj listę ocen (po przecinku)")
+        grades = grades.split(",")
+        # konwersja ocen do liczb całkowitych
+        try:
+            i = 0
+            while(i < len(grades)):
+                # aktualizacja listy poprzez konwersję str to int
+                grades[i] = int(grades[i])
+                i += 1
+            print(grades)
+        except:
+           print("Błąd danych! Nie można wykonać konwersji")
     elif(menu.upper()=="O"):
         pass
     elif(menu.upper()=="W"):
