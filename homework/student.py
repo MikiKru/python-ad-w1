@@ -15,4 +15,3 @@ class Student:
     def __str__(self):
         return "| %06d | %15s | %15s | %25s |" % \
                (self.index_no,self.name,self.lastname,self.grades)
-print(Student("Test","Test"))
