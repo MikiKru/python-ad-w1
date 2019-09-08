@@ -34,7 +34,18 @@ class DatabaseConnector:
             print("| %3d | %15s | %15s | %15s | %17.2fzł | %4s |"
                   % (user[0], user[1], user[2], user[3], user[4], user[5]))
     def inserIntoUsers(self, name, lastname, birthdate, salary, gender):
-        self.coursor.execute("INSERT INTO users VALUES (default, %s, %s, %s, %s, %s)",
+        try:
+            self.coursor.execute("INSERT INTO users VALUES (default, %s, %s, %s, %s, %s)",
                              (name, lastname, birthdate, salary, gender))
+            # self.coursor.execute("INSERT INTO users VALUES (default, "+name+", "+lastname+", "+birthdate+", "+str(salary)+", "+gender+")")
+        except:
+            print("błąd danych!")
+    def deleteUserById(self, id):
+        try:
+            sql = "DELETE FROM users WHERE id = %s"
+            self.coursor.execute(sql, id)
+        except:
+            print("błąd danych!")
+
 
 DatabaseConnector()
