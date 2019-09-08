@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e8abd008-89c8-420c-8a0e-1f6b21be383e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/oop/p72.py" beforeDir="false" afterPath="$PROJECT_DIR$/oop/p72.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules_packages/__init__.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,16 +12,18 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/py_ad_w1_2019$p68.coverage" NAME="p68 Coverage Results" MODIFIED="1567858467866" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/oop" />
-    <SUITE FILE_PATH="coverage/py_ad_w1_2019$w1_repetition.coverage" NAME="w1_repetition Coverage Results" MODIFIED="1566638319341" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/repetition" />
-    <SUITE FILE_PATH="coverage/py_ad_w1_2019$objects.coverage" NAME="objects Coverage Results" MODIFIED="1566743547271" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/oop" />
     <SUITE FILE_PATH="coverage/py_ad_w1_2019$p71.coverage" NAME="p71 Coverage Results" MODIFIED="1567863263149" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/oop" />
     <SUITE FILE_PATH="coverage/py_ad_w1_2019$methods.coverage" NAME="methods Coverage Results" MODIFIED="1566741142394" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/methods" />
     <SUITE FILE_PATH="coverage/py_ad_w1_2019$loops_script.coverage" NAME="loops_script Coverage Results" MODIFIED="1566718834377" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/loops" />
+    <SUITE FILE_PATH="coverage/py_ad_w1_2019$fundamentals_oop.coverage" NAME="fundamentals_oop Coverage Results" MODIFIED="1567850852949" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/oop" />
+    <SUITE FILE_PATH="coverage/py_ad_w1_2019$w1_repetition.coverage" NAME="w1_repetition Coverage Results" MODIFIED="1566638319341" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/repetition" />
+    <SUITE FILE_PATH="coverage/py_ad_w1_2019$objects.coverage" NAME="objects Coverage Results" MODIFIED="1566743547271" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/oop" />
+    <SUITE FILE_PATH="coverage/py_ad_w1_2019$script1.coverage" NAME="script1 Coverage Results" MODIFIED="1567925494999" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/modules_packages" />
     <SUITE FILE_PATH="coverage/py_ad_w1_2019$conditional_instr.coverage" NAME="conditional_instr Coverage Results" MODIFIED="1566643761705" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/conditions" />
     <SUITE FILE_PATH="coverage/py_ad_w1_2019$p66.coverage" NAME="p66 Coverage Results" MODIFIED="1567852262497" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/oop" />
-    <SUITE FILE_PATH="coverage/py_ad_w1_2019$p72.coverage" NAME="p72 Coverage Results" MODIFIED="1567863792395" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/oop" />
-    <SUITE FILE_PATH="coverage/py_ad_w1_2019$fundamentals_oop.coverage" NAME="fundamentals_oop Coverage Results" MODIFIED="1567850852949" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/oop" />
+    <SUITE FILE_PATH="coverage/py_ad_w1_2019$p72.coverage" NAME="p72 Coverage Results" MODIFIED="1567864357345" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/oop" />
     <SUITE FILE_PATH="coverage/py_ad_w1_2019$heridity.coverage" NAME="heridity Coverage Results" MODIFIED="1567860500921" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/oop" />
+    <SUITE FILE_PATH="coverage/py_ad_w1_2019$student.coverage" NAME="student Coverage Results" MODIFIED="1567925666883" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/homework" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
@@ -79,11 +81,41 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/oop/p72.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="175">
               <caret line="7" column="18" lean-forward="true" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules_packages/script1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="226">
+              <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+              <folding>
+                <element signature="e#24#37#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/homework/student.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="350">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules_packages/script2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="6" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -114,6 +146,9 @@
         <option value="$PROJECT_DIR$/oop/heridity.py" />
         <option value="$PROJECT_DIR$/oop/p71.py" />
         <option value="$PROJECT_DIR$/oop/p72.py" />
+        <option value="$PROJECT_DIR$/modules_packages/script2.py" />
+        <option value="$PROJECT_DIR$/modules_packages/script1.py" />
+        <option value="$PROJECT_DIR$/homework/student.py" />
       </list>
     </option>
   </component>
@@ -139,7 +174,22 @@
             <path>
               <item name="py_ad_w1_2019" type="b2602c69:ProjectViewProjectNode" />
               <item name="py_ad_w1_2019" type="462c0819:PsiDirectoryNode" />
-              <item name="oop" type="462c0819:PsiDirectoryNode" />
+              <item name="conditions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="py_ad_w1_2019" type="b2602c69:ProjectViewProjectNode" />
+              <item name="py_ad_w1_2019" type="462c0819:PsiDirectoryNode" />
+              <item name="loops" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="py_ad_w1_2019" type="b2602c69:ProjectViewProjectNode" />
+              <item name="py_ad_w1_2019" type="462c0819:PsiDirectoryNode" />
+              <item name="methods" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="py_ad_w1_2019" type="b2602c69:ProjectViewProjectNode" />
+              <item name="py_ad_w1_2019" type="462c0819:PsiDirectoryNode" />
+              <item name="modules_packages" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -166,7 +216,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.p72">
+  <component name="RunManager" selected="Python.student">
     <configuration name="heridity" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="py_ad_w1_2019" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -181,50 +231,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/oop/heridity.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="p66" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="py_ad_w1_2019" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/oop" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/oop/p66.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="p68" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="py_ad_w1_2019" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/oop" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/oop/p68.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -277,13 +283,57 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="script1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="py_ad_w1_2019" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/modules_packages" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/modules_packages/script1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="student" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="py_ad_w1_2019" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/homework" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/homework/student.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.student" />
+        <item itemvalue="Python.script1" />
         <item itemvalue="Python.p72" />
         <item itemvalue="Python.p71" />
         <item itemvalue="Python.heridity" />
-        <item itemvalue="Python.p68" />
-        <item itemvalue="Python.p66" />
       </list>
     </recent_temporary>
   </component>
@@ -298,23 +348,23 @@
       <option name="presentableId" value="Default" />
       <updated>1566627734805</updated>
       <workItem from="1566627747208" duration="48869000" />
-      <workItem from="1567837027817" duration="20514000" />
+      <workItem from="1567837027817" duration="23368000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69383000" />
+    <option name="totallyTimeSpent" value="72237000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13243243" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20405406" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3548387" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.09824047" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -370,16 +420,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-9">
           <caret line="62" selection-start-line="62" selection-end-line="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/loops/loops_script.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="83" selection-start-line="83" selection-end-line="87" selection-end-column="13" />
-          <folding>
-            <element signature="e#13#24#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -439,6 +479,40 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
           <caret line="7" column="18" lean-forward="true" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loops/loops_script.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74">
+          <caret line="83" column="7" selection-start-line="83" selection-start-column="7" selection-end-line="83" selection-end-column="7" />
+          <folding>
+            <element signature="e#13#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules_packages/script2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules_packages/script1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+          <folding>
+            <element signature="e#24#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homework/student.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
