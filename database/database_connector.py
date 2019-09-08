@@ -3,17 +3,28 @@ import pymysql
 class DatabaseConnector:
     def __init__(self):
         self.loginToDbServer("localhost","python_user","python123","python_db")
-        self.selectFromUsers()
-        self.inserIntoUsers(input("imie"),input("nazwisko"),input("data urodzenia"),
-                            input("pensja"), input("płeć"))
-        decision = input("Potwierdź (T/N): ")
-        if(decision.upper() == "T"):
-            # przeniesienie danych z bufora pamięci do DB
-            self.connect.commit()
-        else:
-            # wycofanie wprowadzanych danych
-            self.connect.rollback()
-        self.selectFromUsers()
+        while(True):
+            menu = input("(S)-select, (I)-insert, (D)-delete, (U)-update, (Q)-quit")
+            if(menu.upper() == "S"):
+                self.selectFromUsers()
+            elif(menu.upper() == "I"):
+                self.inserIntoUsers(input("imie: "),input("nazwisko: "),input("data urodzenia: "),
+                                    input("pensja: "), input("płeć: "))
+                decision = input("Potwierdź (T/N): ")
+                if(decision.upper() == "T"):
+                    # przeniesienie danych z bufora pamięci do DB
+                    self.connect.commit()
+                else:
+                    # wycofanie wprowadzanych danych
+                    self.connect.rollback()
+            elif(menu.upper() == "D"):
+                self.deleteUserById(input("id: "))
+            elif(menu.upper() == "U"):
+                pass
+            elif(menu.upper() == "Q"):
+                break
+            else:
+                print("Błędny wybór")
     def loginToDbServer(self, host, user_login, user_password, db_name):
         try:
             # globalny obiekt połącznia z db
