@@ -4,6 +4,16 @@ class DatabaseConnector:
     def __init__(self):
         self.loginToDbServer("localhost","python_user","python123","python_db")
         self.selectFromUsers()
+        self.inserIntoUsers(input("imie"),input("nazwisko"),input("data urodzenia"),
+                            input("pensja"), input("płeć"))
+        decision = input("Potwierdź (T/N): ")
+        if(decision.upper() == "T"):
+            # przeniesienie danych z bufora pamięci do DB
+            self.connect.commit()
+        else:
+            # wycofanie wprowadzanych danych
+            self.connect.rollback()
+        self.selectFromUsers()
     def loginToDbServer(self, host, user_login, user_password, db_name):
         try:
             # globalny obiekt połącznia z db
@@ -23,6 +33,8 @@ class DatabaseConnector:
         for user in self.coursor.fetchall():
             print("| %3d | %15s | %15s | %15s | %17.2fzł | %4s |"
                   % (user[0], user[1], user[2], user[3], user[4], user[5]))
-
+    def inserIntoUsers(self, name, lastname, birthdate, salary, gender):
+        self.coursor.execute("INSERT INTO users VALUES (default, %s, %s, %s, %s, %s)",
+                             (name, lastname, birthdate, salary, gender))
 
 DatabaseConnector()
